@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to bottom right, #3498db, #8e44ad);
+    color: #000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container de Atualização de Informações */
+.container {
+    width: 400px;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin: 0 10px;
+}
+
+
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 10px;
+    width: 100%;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: #27ae60;
+}
+
+/* Container de Informações Atualizadas */
+.profile-info {
+    margin-bottom: 20px;
+}
+
+.profile-pic-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    border: 3px solid #fff;
+    width: 55%;
+}
+
+.profile-update p, h2 {
+    margin: 12px;
+}
+
+#fileInput {
+    display: none;
+}
+
+#fileLabel {
+    display: block;
+    background-color: #2ecc71;
+    color: #fff;
+    font-size: 13px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    width: 90%;
+    text-align: center;
+}
+
+#fileLabel:hover {
+    background-color: #27ae60;
+}
