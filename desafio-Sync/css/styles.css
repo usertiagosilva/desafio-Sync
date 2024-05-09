@@ -1,3 +1,4 @@
+/* Configuração geral */
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding:100px 20px 100px 20px;
 }
 
 /* Container de Atualização de Informações */
@@ -21,9 +23,8 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     margin: 0 10px;
+    border: 1px solid #333;
 }
-
-
 
 form {
     margin-top: 20px;
@@ -38,6 +39,7 @@ label {
 
 input[type="text"],
 input[type="number"],
+input[type="email"],
 textarea {
     width: calc(100% - 22px);
     padding: 10px;
@@ -45,6 +47,7 @@ textarea {
     border: none;
     border-radius: 5px;
     display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 button[type="submit"] {
@@ -107,4 +110,61 @@ button[type="submit"]:hover {
 
 #fileLabel:hover {
     background-color: #27ae60;
+}
+
+/* Estilos para mensagens de erro */
+.error-message {
+    color: #ff0000;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff; 
+    text-align: center; 
+    padding: 5px 0;  
+    width: 100%; 
+    position: fixed;
+    bottom: 0; 
+    font-size: 12px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 600px) {
+    /* Container flexível */
+    body {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        margin-bottom: 50px;
+        padding: auto;
+    }
+
+    /* Containers centralizados */
+    .container {
+        width: 90%;
+        max-width: none; 
+        margin-bottom: 6px; 
+        margin-top: 10px; 
+    }
+
+    /* Tamanho da foto */
+    .profile-pic {
+        border-radius: 50%;
+        border: 3px solid #fff;
+        width: 30%;
+    }
+
+    /* Margem superior apenas ao primeiro container */
+    .container:first-child {
+        margin-top: 600px;
+    }
+
+    /* Posição do footer */
+    footer {
+        position: relative;
+        width: 100vh;
+    }
 }
